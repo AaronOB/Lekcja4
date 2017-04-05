@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jak się nazywa owoc z tego to drzewo?"
+                android:textColor="?android:attr/colorMultiSelectHighlight"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="252dp"
+                android:layout_height="182dp"
+                app:srcCompat="@mipmap/ananas" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                >
+
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ananas"
+                    android:onClick="owoc1"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melon"
+                    android:onClick="owoc1"/>
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="252dp"
+                android:layout_height="182dp"
+                app:srcCompat="@mipmap/jablonka" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+               >
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jabłko"
+                    android:onClick="owoc2"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gruszka"
+                    android:onClick="owoc2"/>
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="252dp"
+                android:layout_height="182dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/brzoskwinia" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arbuz"
+                    android:onClick="owoc3"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brzoskwinia"
+                    android:onClick="owoc3"/>
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="252dp"
+                android:layout_height="182dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/gruszka" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="188dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_weight="0.05">
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banan"
+                    android:onClick="owoc4"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gruszka"
+                    android:onClick="owoc4"/>
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="252dp"
+                android:layout_height="182dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/wisnia" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wiśnia"
+                    android:onClick="owoc5"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ananas"
+                    android:onClick="owoc5"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Wyświetl wynik"
+                android:onClick="Wyswietl"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
